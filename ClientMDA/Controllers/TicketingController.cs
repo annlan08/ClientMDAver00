@@ -75,6 +75,11 @@ namespace ClientMDA.Controllers
             return View();
         }
 
+        public IActionResult SelectTicket()
+        {
+            return View();
+        }
+
         public IActionResult sendmail()
         {
             MimeMessage message = new MimeMessage();
