@@ -262,6 +262,8 @@
         console.log(ArrSeats)
     }
 
+
+    let seatArr = new Array();
     btnsend.addEventListener('click', () => {
         for (let i = 0; i < count; i++) {
             if (ArrSeats[i] == null) {
@@ -270,10 +272,10 @@
                 window.alert("請選擇符合數量的座位數")
                 return;
             }
+            seatArr.push(ArrSeats[i].getAttribute('data'))
         }
-
-        seatInfo.value = ArrSeats.join('#');
-
+        seatInfo.value = seatArr.join('#');
+        console.log(seatInfo.value);
         
     })
 
