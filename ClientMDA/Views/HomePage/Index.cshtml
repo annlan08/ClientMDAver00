@@ -1,0 +1,1086 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>M.D.A.觀享時刻</title>
+    <meta name="author" content="MSIT143 01陳苡錚 06王婷薇 11廖家毅 13李沛軒 16洪暐婷 18游曉雯 20鄭凱" />
+    <meta name="keywords" content="M.D.A.觀享時刻,M.D.A.,MDA,觀享時刻,電影訂票,電影評論,訂票,評論,電影,電視劇,動畫" />
+    <meta name="date" content="2022/06/15" />
+    <meta name="description" content="M.D.A. 為 Movie, Drama, Anime 的縮寫。希望藉由這個整合平台，讓最完整的電影、電視劇及動畫相關資訊都能快速方便的被使用者查找、觀賞及討論。" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/css/HomePage/banner.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    @*<div class="ipc-watchlist-ribbon ipc-focusable ipc-watchlist-ribbon--m ipc-watchlist-ribbon--baseAlt ipc-watchlist-ribbon--onImage ipc-poster__watchlist-ribbon poster-card-watchlist-ribbon" aria-label="add to watchlist" role="button" tabindex="0"><svg class="ipc-watchlist-ribbon__bg" width="24px" height="34px" viewBox="0 0 24 34" xmlns="http://www.w3.org/2000/svg" role="presentation"><polygon class="ipc-watchlist-ribbon__bg-ribbon" fill="#000000" points="24 0 0 0 0 32 12.2436611 26.2926049 24 31.7728343"></polygon><polygon class="ipc-watchlist-ribbon__bg-hover" points="24 0 0 0 0 32 12.2436611 26.2926049 24 31.7728343"></polygon><polygon class="ipc-watchlist-ribbon__bg-shadow" points="24 31.7728343 24 33.7728343 12.2436611 28.2926049 0 34 0 32 12.2436611 26.2926049"></polygon></svg><div class="ipc-watchlist-ribbon__icon" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-icon ipc-icon--add ipc-icon--inline" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg></div></div>*@
+    <!-- banner -->
+    <div class="swiper mySwiper" id="banner-active">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide" id="img-wrapper">
+                <div id="imgbox">
+                    <img src="https://movies.yahoo.com.tw/x/r/w800/i/o/production/movie-photos/September2022/b5JWfc4a9PrczgP40zbl-1920x1080.jpg" alt="電影版 後空翻少年！！">
+                </div>
+                <div class="hangposter"><img class="" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/kUTqJeKB5TxcV4MdB5Vk-1080x1543.jpg" alt="電影版 後空翻少年！！"></div>
+                <div class="content-banner" id="content">
+                    <span class="fa fa-play-circle" id="play"></span>
+                    <div id="box-banner">
+                        <ul class="listb">
+                            <li> <a href="https://www.youtube.com/watch?v=Q1TPRt2IWtA" id="imgbanner" class="imgbanner">歡笑越多就跳得越高，淚水越多就變得越強!</a></li>
+                            <li>觀看預告片</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="img-wrapper">
+                <div id="imgbox">
+                    <img src="https://movies.yahoo.com.tw/x/r/w800/i/o/production/movie-photos/September2022/PEQ1LzNrvP4SDV94mrI3-2168x1080.jpg" alt="微笑">
+                </div>
+                <div class="hangposter"><img class="" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/yTKJKMxnOyp6ZjKIOP6a-1024x1509.jpg" alt="微笑"></div>
+                <div class="content-banner" id="content">
+                    <span class="fa fa-play-circle" id="play"></span>
+                    <div id="box-banner">
+                        <ul class="listb">
+                            <li> <a href="https://www.youtube.com/watch?v=2VYg4el0mGM" id="imgbanner" class="imgbanner">究竟何事，不寒而慄，令人恐懼?</a></li>
+                            <li>觀看預告片</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="img-wrapper">
+                <div id="imgbox">
+                    <img src="https://movies.yahoo.com.tw/x/r/w800/i/o/production/movie-photos/August2022/YCDYyJp4rD0hSJLfm2kp-1280x720.jpg" alt="小獅子王">
+                </div>
+                <div class="hangposter"><img class="" src="https://movies.yahoo.com.tw/i/o/production/movies/August2022/hL4SXcrb1Solds7mscX1-1080x1543.jpg" alt="小獅子王"></div>
+                <div class="content-banner" id="content">
+                    <span class="fa fa-play-circle" id="play"></span>
+                    <div id="box-banner">
+                        <ul class="listb">
+                            <li> <a href="https://www.youtube.com/watch?v=Ks8u9Ho5WJM" id="imgbanner" class="imgbanner">野生幼獅實際拍攝X超擬真視覺特效，神級表現細膩真實情感</a></li>
+                            <li>觀看預告片</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="img-wrapper">
+                <div id="imgbox">
+                    <img src="https://movies.yahoo.com.tw/x/r/w800/i/o/production/movie-photos/August2022/JYpVC8dOoU5zW5u7oBoq-1433x1080.jpg" alt="金髮夢露">
+                </div>
+                <div class="hangposter"><img class="" src="https://movies.yahoo.com.tw/i/o/production/movies/August2022/ZeeKrEsYKim057NhL8N7-1080x1512.jpg" alt="金髮夢露"></div>
+                <div class="content-banner" id="content">
+                    <span class="fa fa-play-circle" id="play"></span>
+                    <div id="box-banner">
+                        <ul class="listb">
+                            <li> <a href="https://www.youtube.com/watch?v=WYEXFXQn-8A" id="imgbanner" class="imgbanner">探索好萊塢傳奇偶像瑪麗蓮·夢露錯綜複雜的一生，揭露她為人所知與不為人知的經歷</a></li>
+                            <li>觀看預告片</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="img-wrapper">
+                <div id="imgbox">
+                    <img src="https://movies.yahoo.com.tw/x/r/w800/i/o/production/movie-photos/June2022/UYgvPUSEOxuopne8TVF7-1920x1080.jpg" alt="鱷魚歌王">
+                </div>
+                <div class="hangposter"><img class="" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/KodcHZ1hOar5kszDeJP9-1435x2048.jpg" alt="鱷魚歌王"></div>
+                <div class="content-banner" id="content">
+                    <span class="fa fa-play-circle" id="play"></span>
+                    <div id="box-banner">
+                        <ul class="listb">
+                            <li> <a href="https://www.youtube.com/watch?v=7mRO-AxFOYY" id="imgbanner" class="imgbanner">一個神祕好聲音，即將震撼全世界</a></li>
+                            <li>觀看預告片</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide" id="img-wrapper">
+                <div id="imgbox">
+                    <img src="https://movies.yahoo.com.tw/x/r/w800/i/o/production/movie-photos/July2022/YltxlJUE90FYqKymttsh-1628x1080.jpg" alt="月光光新慌慌：萬聖結">
+                </div>
+                <div class="hangposter"><img class="" src="https://movies.yahoo.com.tw/i/o/production/movies/July2022/QT8WucdG3eE6T8abDsGQ-1080x1711.jpg" alt="月光光新慌慌：萬聖結"></div>
+                <div class="content-banner" id="content">
+                    <span class="fa fa-play-circle" id="play"></span>
+                    <div id="box-banner">
+                        <ul class="listb">
+                            <li> <a href="https://www.youtube.com/watch?v=EqYmjyl6lbE" id="imgbanner" class="imgbanner">這是洛莉史特羅德的最後一搏。</a></li>
+                            <li>觀看預告片</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="img-wrapper">
+                <div id="imgbox">
+                    <img src="https://movies.yahoo.com.tw/x/r/w800/i/o/production/movie-photos/August2022/hWVp8s9XljiyxfZWnl6k-1620x1080.jpg" alt="戀之光">
+                </div>
+                <div class="hangposter"><img class="" src="https://movies.yahoo.com.tw/i/o/production/movies/August2022/9iTxKV3oTMnCkAYC3LZ5-800x1135.JPG" alt="戀之光"></div>
+                <div class="content-banner" id="content">
+                    <span class="fa fa-play-circle" id="play"></span>
+                    <div id="box-banner">
+                        <ul class="listb">
+                            <li> <a href="https://www.youtube.com/watch?v=UIuZqGwUwsE" id="imgbanner" class="imgbanner">“戀愛中的女孩＝看起來閃閃發光”</a></li>
+                            <li>觀看預告片</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="swiper-button-next" id="right">
+            @*color=透明+我要的文字或DIV with icon 改寫*@
+        </button>
+        <button class="swiper-button-prev" id="left"></button>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+    <!-- Rate -->
+
+    <div class="region">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="section-title">
+                    <h4>新片排行</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="btn__all">
+                    <a href="/Theater" class="primary-btn">View All <span class="arrow_right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper mySwiperRATE">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/yTKJKMxnOyp6ZjKIOP6a-1024x1509.jpg" alt="微笑">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="/Theater/阮玲玉">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">4.3</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E5%BE%AE%E7%AC%91-smile-13558">微笑</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/cpHovXM36O6jY9b2pFCr-1024x1459.jpg" alt="樂透大作戰">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E6%A8%82%E9%80%8F%E5%A4%A7%E4%BD%9C%E6%88%B0-645-13998">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">4.3</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E6%A8%82%E9%80%8F%E5%A4%A7%E4%BD%9C%E6%88%B0-645-13998">樂透大作戰</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/u5oi9w4jDqF9lQb71MD8-1080x1543.JPG" alt="行動代號：狼狩獵">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E8%A1%8C%E5%8B%95%E4%BB%A3%E8%99%9F-%E7%8B%BC%E7%8B%A9%E7%8D%B5-project-wolf-hunting-14004">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">3.9</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E8%A1%8C%E5%8B%95%E4%BB%A3%E8%99%9F-%E7%8B%BC%E7%8B%A9%E7%8D%B5-project-wolf-hunting-14004">行動代號：狼狩獵</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/August2022/dPn3kEEKjWqxYBe6N95t-1080x1541.jpg" alt="阿凡達（重映版）">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E5%B0%8F%E7%8D%85%E5%AD%90%E7%8E%8B-king-13925">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">4.7</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/i/o/production/movies/August2022/dPn3kEEKjWqxYBe6N95t-1080x1541.jpg">阿凡達（重映版）</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/August2022/vTKyIVk0mIZxdiHwZ0Wv-1080x1543.jpg" alt="破案天才伽利略：沉默的遊行">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E7%A0%B4%E6%A1%88%E5%A4%A9%E6%89%8D%E4%BC%BD%E5%88%A9%E7%95%A5-%E6%B2%89%E9%BB%98%E7%9A%84%E9%81%8A%E8%A1%8C-silent-parade-13878">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">4.1</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E7%A0%B4%E6%A1%88%E5%A4%A9%E6%89%8D%E4%BC%BD%E5%88%A9%E7%95%A5-%E6%B2%89%E9%BB%98%E7%9A%84%E9%81%8A%E8%A1%8C-silent-parade-13878">破案天才伽利略：沉默的遊行</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/August2022/r8m77Yy8oS781HfG30NZ-1080x1521.jpg" alt="新・超人力霸王">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E6%96%B0-%E8%B6%85%E4%BA%BA%E5%8A%9B%E9%9C%B8%E7%8E%8B-shin-ultraman-13818">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">4.3</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E6%96%B0-%E8%B6%85%E4%BA%BA%E5%8A%9B%E9%9C%B8%E7%8E%8B-shin-ultraman-13818">新・超人力霸王</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/June2022/rSgsCyOBI9ZZizMZTzBh-1080x1532.jpg" alt="航海王劇場版：紅髮歌姬">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E8%88%AA%E6%B5%B7%E7%8E%8B%E5%8A%87%E5%A0%B4%E7%89%88-%E7%B4%85%E9%AB%AE%E6%AD%8C%E5%A7%AC-one-piece-film-red-13466">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">4.1</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E8%88%AA%E6%B5%B7%E7%8E%8B%E5%8A%87%E5%A0%B4%E7%89%88-%E7%B4%85%E9%AB%AE%E6%AD%8C%E5%A7%AC-one-piece-film-red-13466">航海王劇場版：紅髮歌姬</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/July2022/5cjxTPOea2hYyABNCUp5-1080x1543.jpg" alt="電影版 搖曳露營">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E9%9B%BB%E5%BD%B1%E7%89%88-%E6%90%96%E6%9B%B3%E9%9C%B2%E7%87%9F-laid-back-camp-13674">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">4.5</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E9%9B%BB%E5%BD%B1%E7%89%88-%E6%90%96%E6%9B%B3%E9%9C%B2%E7%87%9F-laid-back-camp-13674">電影版 搖曳露營</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/ZLV55La20KBdRaTtDlF3-1080x1543.jpg" alt="機密同盟2">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E5%B0%8F%E7%8D%85%E5%AD%90%E7%8E%8B-king-13925">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">4.6</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E5%B0%8F%E7%8D%85%E5%AD%90%E7%8E%8B-king-13925">機密同盟2</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-paginationR" id="swiper-paginationR"></div>
+    </div>
+
+    @*anticipation*@
+    <div class="region">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="section-title">
+                    <h4>期待排行</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="btn__all">
+                    <a href="/Theater" class="primary-btn">View All <span class="arrow_right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*要鎖評論*@
+    <div class="swiper mySwiperRATE">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/xfEKx8FDtfWe0fioLdkj-1024x1463.jpg" alt="天劫高手">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E5%A4%A9%E5%8A%AB%E9%AB%98%E6%89%8B-bandit-14067">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">-   /  期待 : 5</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E5%A4%A9%E5%8A%AB%E9%AB%98%E6%89%8B-bandit-14067">天劫高手</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/kKZAbx2S1Vh6zhsKjpRI-1080x1543.jpg" alt="河畔小日子">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E6%B2%B3%E7%95%94%E5%B0%8F%E6%97%A5%E5%AD%90-riverside-mukolitta-14033">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">-   /  期待 : 5</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E6%B2%B3%E7%95%94%E5%B0%8F%E6%97%A5%E5%AD%90-riverside-mukolitta-14033">河畔小日子</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/svGk0bY7EUDDZJbFGCiW-1080x1543.JPG" alt="人生真美麗">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E4%BA%BA%E7%94%9F%E7%9C%9F%E7%BE%8E%E9%BA%97-life-is-beautiful-14025">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">-   /  期待 : 4.8</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E4%BA%BA%E7%94%9F%E7%9C%9F%E7%BE%8E%E9%BA%97-life-is-beautiful-14025">人生真美麗</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/F90ayjIO6pdW6sxSMW2X-1080x1560.jpg" alt="黑亞當">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E9%BB%91%E4%BA%9E%E7%95%B6-black-adam-13462">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">-   /  期待 : 4.6</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E9%BB%91%E4%BA%9E%E7%95%B6-black-adam-13462">黑亞當</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/dcisbwpZp42BxhUmOjO6-1080x1543.jpg" alt="驚爆倒數60分鐘">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E9%A9%9A%E7%88%86%E5%80%92%E6%95%B860%E5%88%86%E9%90%98-hot-seat-14117">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">-   /  期待 : 5</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E9%A9%9A%E7%88%86%E5%80%92%E6%95%B860%E5%88%86%E9%90%98-hot-seat-14117">驚爆倒數60分鐘</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/cRNL4zu2a19D2sCaJVAl-1080x1544.JPG" alt="鬼禱">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E9%AC%BC%E7%A6%B1-prey-for-the-devil-14119">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">-   /  期待 : 5</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E9%AC%BC%E7%A6%B1-prey-for-the-devil-14119">鬼禱</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/cEdEpa0ZBfh86ID8k8Ql-1080x1543.JPG" alt="流浪之月">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E6%B5%81%E6%B5%AA%E4%B9%8B%E6%9C%88-wandering-14120">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">-   /  期待 : 5</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E6%B5%81%E6%B5%AA%E4%B9%8B%E6%9C%88-wandering-14120">流浪之月</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/October2022/0uOq68XcOtwTwAYaJ3Gi-800x1143.jpg" alt="終極堡壘2">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E7%B5%82%E6%A5%B5%E5%A0%A1%E5%A3%982-fortress-snipers-eye-14118">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">-   /  期待 : 5</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E7%B5%82%E6%A5%B5%E5%A0%A1%E5%A3%982-fortress-snipers-eye-14118">終極堡壘2</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://movies.yahoo.com.tw/i/o/production/movies/September2022/KoDfbmoxtyTAwl7WhbtI-1080x1543.JPG" alt="瑪歌皇后 數位修復版">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E7%91%AA%E6%AD%8C%E7%9A%87%E5%90%8E-%E6%95%B8%E4%BD%8D%E4%BF%AE%E5%BE%A9%E7%89%88-la-reine-margot-14072">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">-   /  期待 : 5</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E7%91%AA%E6%AD%8C%E7%9A%87%E5%90%8E-%E6%95%B8%E4%BD%8D%E4%BF%AE%E5%BE%A9%E7%89%88-la-reine-margot-14072">瑪歌皇后 數位修復版</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-paginationR" id="swiper-paginationR"></div>
+    </div>
+
+    @*recommend*@
+    <div class="region">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="section-title">
+                    <h4>本日推薦</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="btn__all">
+                    <a href="/Theater" class="primary-btn">View All <span class="arrow_right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper mySwiperRATE">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://img.ezding.com.tw/photos/ezding/poster/px_fcatm0873074_0003.jpg" alt="阮玉玲">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="/Theater/阮玲玉">購      票</a></li>
+                                <li><a href="/Comment/電影評論">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">3.7</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="/Theater/阮玲玉">阮玲玉</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        @*圖片突出*@
+                        <img class="blur" src="https://www.mirrormedia.com.tw/assets/images/20220523162334-2b7f8e6e5871719ce3357f59acba03e3-tablet.jpg" alt="捍衛戰士：獨行俠">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="/Theater/捍衛戰士2">購      票</a></li>
+                                <li><a href="/Comment/電影評論">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">4.2</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="/Theater/捍衛戰士2">捍衛戰士：獨行俠</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://image.agentm.tw/images/movie/9f383690afb2fc65583c23aa7e17b9fb654bca49227dff65b5bd6005c8c6b29d/poster/image/b56ff0e0-317f-4a2e-bf3d-39513a8a8d13.png" alt="讓子彈飛">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="/Theater/讓子彈飛">購      票</a></li>
+                                <li><a href="/Comment/電影評論">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">3.6</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="/Theater/讓子彈飛">讓子彈飛</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="img-wrapper">
+                        <img class="blur" src="https://image.agentm.tw/images/movie/be83f523598b675fc18166e597c19fb404e9c072d640d541fa38fd8bc3fc197c/poster/image/d45d6a3c-45c1-430c-bf49-29a1f234125e.jpg" alt="TENET天能">
+                        <div class="content fade">
+                            <ul class="list">
+                                <li><a href="https://movies.yahoo.com.tw/movietime_result.html/id=13925">購      票</a></li>
+                                <li><a href="https://movies.yahoo.com.tw/movieinfo_main/%E9%BB%91%E4%BA%9E%E7%95%B6-black-adam-13462">電影介紹</a></li>
+                                <li><a href="https://www.imdb.com/title/tt14073780/?ref_=fn_al_tt_1">加入片單</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box">
+                        <div class="star">
+                            <div class="showRate">
+                                <span class="fa fa-star checked" id="fafastarchecked"></span>
+                                <span class="starRate">3.7</span>
+                                <button class="ToRate" id="openbtn">
+                                    <i class='far fa-star' id="ToR"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5 class="title titleofmovie"><a href="https://movies.yahoo.com.tw/movieinfo_main/%E9%BB%91%E4%BA%9E%E7%95%B6-black-adam-13462">TENET天能</a></h5>
+                    </div>
+                    <div class="AddList">
+                        <button class="AddListBtn">
+                            <div class="fa fa-plus" id="plus"> &emsp;Watchlist</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-paginationR" id="swiper-paginationR"></div>
+
+    </div>
+
+
+    @*Mylist*@
+    <div class="region">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="section-title">
+                    <h4>我的片單</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="btn__all">
+                    <a href="/Theater" class="primary-btn">View All <span class="arrow_right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper mySwiperList" id="mylist">
+        <p id="addmylist">快來新增你的專屬片單吧!</p>
+    </div>
+
+    @*rating star*@
+    <div class="modal " id="modal">
+        <div class="fa fa-star " id="fafastarrate">
+            <span id="rate-nuber">?</span>
+        </div>
+        <div class="modal-rating-header">
+            <div class="modal-rating-header-btn">
+                <button class="modal-close-btn" id="closebtn">&times;</button>
+            </div>
+        </div>
+        <div class="modal-rating-body" id="modal-rating-body">
+            <div id="rating-title">
+                <span id="rating-it">評分它</span>
+                <div id="in-rating-movie">
+                    <span id="rating-movie-header"></span>
+                </div>
+            </div>
+            <div class="rating">
+                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+            </div>
+            <div id="summitbox">
+                <button class="sumitstarBtn">送出 </button>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+
+    @*test*@
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <button id="Toggle" class="Toggle">Toggle</button>
+    <div class='col-lg-2 col-md-2 well bubble'></div>-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="~/js/HomePage/banner.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> @*footer樣式*@
+</body>
+
+@section Scripts{
+    <script>
+        const Toggle = document.getElementById("Toggle");
+        const modal = document.getElementById("modal");
+        const obtn = document.querySelectorAll(".ToRate");
+        const cbtn = document.getElementById("closebtn");
+        const overlay = document.getElementById("overlay");
+        const headerofstar = document.getElementById("in-rating-movie");
+        const t = document.querySelectorAll(".title");
+
+
+        for (let i = 0; i < obtn.length; i++) {
+            obtn[i].addEventListener('click', function btnonclick() {
+                modal.style.display = "block";
+                overlay.style.opacity = "1";
+                overlay.style.pointerEvents = "All";
+                headerofstar.textContent = t[i].textContent;
+            })
+        }
+
+        cbtn.onclick = function () {
+            modal.style.display = "none";
+            overlay.style.opacity = "0";
+            overlay.style.pointerEvents = "none ";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                overlay.style.opacity = "0";
+                overlay.style.pointerEvents = "none ";
+            }
+        }
+
+                //const b = $(title).text()
+                //console.log(title)
+                //const tp = t.value
+                //console.log(t)
+                //headerofstar.innerHTML = b
+                //headerofstar = title
+                //console.log(headerofstar)
+        /* headerofstar=b*/
+        /* $(headerofstar).value = b*/
+        /* headerofstar.forEach()*/
+                //const a = title;
+                //console.log(b);
+        /* $("#titleofmovie1").data('value');*/
+        /*console.log(headerofstar)*/
+                //const open = document.querySelectorAll('[data-modal-target]')
+                //const openbtn = document.querySelector('.ToRate')
+                //const close = document.querySelectorAll('[data-close-button]')
+                //const closebtn = document.querySelector('.modal-close-btn')
+                //const overlay = document.querySelector('#overlay')
+
+                //openbtn.forEach(button => {
+                //    button.addEventListener('click', () => {
+                //        const modal = document.querySelector(button.dataset.modalTarget)
+                //        openModal(modal)
+                //    })
+                //})
+
+                //function openModal(modal) {
+                //    if (modal == null) return
+                //    modal.classList.add('active')
+                //    overlay.classList.add('active')
+                //}
+
+                //$('#Toggle').click(function () {
+                //    $('.bubble').toggleClass('animate');
+                //})
+                //$('#Toggle').click(function () {
+                //    $('.modal').toggleClass('active');
+                //})
+    </script>
+}

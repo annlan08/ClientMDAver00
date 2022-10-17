@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewData["Title"] = "我的評論";
+}
+@*<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">*@
+<link rel="stylesheet" type="text/css" href="~/css/Comment/jquery.eeyellow.Timeline.css" /> @*我的評論時間軸*@
+
+@section Styles{
+
+    <style>
+/*
+        body {
+            font-family: 'Roboto';
+            color:#fefefe;
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .container {
+            margin-top: 150px;
+        }*/
+    </style>
+}
+
+<body>
+    <div class="VivaTimeline">
+        <dl>
+            <!--月份 1-->
+            <dt>Feb 2021</dt>
+
+            <!--左側文章 start-->
+            <dd class="pos-left clearfix">
+                <div class="circ"></div>
+                <div class="time">Feb 20</div><!--填入日期-->
+                <div class="events">
+                    <div class="events-header">不只關於速度與飛翔的渴望,也與我們的悔恨以及所需要的勇氣有關</div><!--填入標題-->
+                    <div class="events-body">
+                        @*<div class="row">
+                            <div class="col-md-6 pull-left">*@
+                                <img class="events-object img-responsive img-rounded" src="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/202205/628C96458963A1653380677.jpeg" /><!--填入圖片網址-->
+                            </div>
+                            <div class="events-desc">
+                                湯姆．克魯斯（Tom Cruise）的《捍衛戰士：獨行俠》（Top Gun: Maverick）在各地試映過後，隨即得到了一片熱烈好評，
+                                並被不少人稱為一定要進戲院欣賞的超級大片......
+                            <!--</div>--><!--填入描述-->
+                        <!--</div>-->
+                    </div>
+                    <div class="events-footer"><a asp-area="" asp-controller="Comment" asp-action="會員評論">繼續閱讀</a></div><!--可填底部標題 或刪除-->
+                </div>
+            </dd>
+            <!--左側文章 end-->
+            <!--右側文章 start-->
+            <dd class="pos-right clearfix">
+                <div class="circ"></div>
+                <div class="time">Feb 13</div><!--填入日期-->
+                <div class="events">
+                    <div class="events-header">不只關於速度與飛翔的渴望</div><!--填入標題-->
+                    <div class="events-body">
+                        <img class="events-object img-responsive img-rounded" src="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/202205/628C9650831071653380688.jpeg" />--><!--填入圖片網址-->
+                        <div class="events-desc">
+                            湯姆．克魯斯（Tom Cruise）的《捍衛戰士：獨行俠》（Top Gun: Maverick）在各地試映過後，隨即得到了一片熱烈好評，
+                            並被不少人稱為一定要進戲院欣賞的超級大片......
+                        </div>
+
+                        <!--<div class="row">
+    <div class="col-md-6 pull-left">
+        <img class="events-object img-responsive img-rounded" src="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/202205/628C965A7CAF41653380698.jpeg" />-->
+                        <!--填入圖片網址-->
+                        <!--</div>
+    <div class="events-desc">
+        湯姆．克魯斯（Tom Cruise）的《捍衛戰士：獨行俠》（Top Gun: Maverick）在各地試映過後，隨即得到了一片熱烈好評，
+        並被不少人稱為一定要進戲院欣賞的超級大片......
+    </div>-->
+                        <!--填入描述-->
+                        <!--</div>-->
+                    </div>
+                    <div class="events-footer"><a asp-area="" asp-controller="Comment" asp-action="會員評論">繼續閱讀</a></div><!--可填底部標題 或刪除-->
+                </div>
+            </dd>
+            <!--右側文章 end-->
+            <!--月份 2-->
+            <dt>Jan 2021</dt>
+
+            <!--左側文章 start-->
+            <dd class="pos-left clearfix">
+                <div class="circ"></div>
+                <div class="time">Jan 30</div><!--填入日期-->
+                <div class="events">
+                    <div class="events-header">也與我們的悔恨以及所需要的勇氣有關</div><!--填入標題-->
+                    <div class="events-body">
+                                                <img class="events-object img-responsive img-rounded" src="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/202205/628C965A7CAF41653380698.jpeg" />--><!--填入圖片網址-->
+                        <div class="events-desc">
+                            湯姆．克魯斯（Tom Cruise）的《捍衛戰士：獨行俠》（Top Gun: Maverick）在各地試映過後，隨即得到了一片熱烈好評，
+                            並被不少人稱為一定要進戲院欣賞的超級大片......
+                        </div>-->
+                        <div class="row">
+                            <div class="col-md-6 pull-left">
+                                <img class="events-object img-responsive img-rounded" src="https://2.bp.blogspot.com/-kSoFOb5NBBo/Wm-wzn619hI/AAAAAAAAWVw/13tYUepFvuk3zD3XnU25wBixfDuAzC-0wCLcBGAs/s1600/pagespeed-slow-remove-plugin.jpg" /><!--填入圖片網址-->
+                            </div>
+                            <div class="events-desc">
+                                湯姆．克魯斯（Tom Cruise）的《捍衛戰士：獨行俠》（Top Gun: Maverick）在各地試映過後，隨即得到了一片熱烈好評，
+                                並被不少人稱為一定要進戲院欣賞的超級大片......
+                            </div><!--填入描述-->
+                        </div>
+                    </div>
+                    <div class="events-footer"><a asp-area="" asp-controller="Comment" asp-action="會員評論">繼續閱讀</a></div><!--可填底部標題 或刪除-->
+                </div>
+            </dd>
+            <!--左側文章 end-->
+            <!--右側文章 start-->
+            <dd class="pos-right clearfix">
+                <div class="circ"></div>
+                <div class="time">Jan 17</div><!--填入日期-->
+                <div class="events">
+                    <div class="events-header">從小編到總編之路﹍如何成為部落客中的佼佼者</div><!--填入標題-->
+                    <div class="events-body">
+                        <div class="row">
+                            <div class="col-md-6 pull-left">
+                                <img class="events-object img-responsive img-rounded" src="https://3.bp.blogspot.com/-lo1NZ0KVZSU/WRrNvclwESI/AAAAAAAAPjQ/k50YaNha-1YlzwU0qtHwbhBoLfXPll1iACLcB/s780/how-to-become-top-blog-writer.jpg" /><!--填入圖片網址-->
+                            </div>
+                            <div class="events-desc">前陣子這篇「 部落格從搜尋引擎而來的流量，是不會有感情的﹍找回經營網站的動力 」寫完後，有位美食部落格客戶，同時也算本站長期讀者，問了一些 SEO 問題。其實滿訝異的，既然是忠實讀者，想必知道我希望讀者將注意力放在 SEO 以外的地方。 瞭解她詢問的原因後，覺得這段對話可以看...</div><!--填入描述-->
+                        </div>
+                    </div>
+                    <div class="events-footer"><a href="https://www.wfublog.com/2018/01/how-to-become-top-blog-writer.html" target="_blank">繼續閱讀</a></div><!--可填底部標題 或刪除-->
+                </div>
+            </dd>
+            <!--右側文章 end-->
+            <!--月份 3-->
+            <dt>Dec 2020</dt>
+
+            <!--月份 4-->
+            <dt>Nov 2019</dt>
+        </dl>
+    </div>
+
+
+</body>
+
+
+<script>
+    $('.VivaTimeline').vivaTimeline();
+    $('.VivaTimeline').vivaTimeline({
+        carousel: true
+    });
+    $('.VivaTimeline').vivaTimeline({
+        carousel: true,
+        carouselTime: 3000
+    });
+
+</script>
+@*<script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>*@
+<script src="~/js/Comment/jquery.eeyellow.Timeline.js"></script> @*我的評論時間軸*@
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> @*footer樣式*@

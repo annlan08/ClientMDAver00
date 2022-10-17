@@ -1,0 +1,144 @@
+﻿@{
+
+}
+<head>
+    <link rel="stylesheet" href="~/cyborg/css/fontawesome.css">
+    <link rel="stylesheet" href="~/cyborg/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <style>
+        .main-profile ul .seat {
+            border-bottom: none;
+        }
+
+        .item {
+            height: 400px;
+        }
+
+            .item img {
+                height: 300px;
+            }
+
+        .pay {
+            text-align: center;
+        }
+
+        body {
+            background-color: #070720;
+        }
+    </style>
+</head>
+
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<div class="pt-4">
+    <div class="main-profile pt-4">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="~/images/Ticketing/hp.jpg" alt="" style="border-radius: 23px;" />
+            </div>
+            <div class="col-lg-4 align-self-center">
+                <div class="main-info header-text">
+                    <h4>哈利波特:神秘的魔法石(數位)</h4>
+                    <p>有一天有一個叫哈利波特的神奇小男孩，他有五顆魔法石，然後他就開開心心的跑去抽卡，結果銀色，是巨象，呵呵，嫩!</p>
+                    <div class="main-border-button">
+                        <a href="#">觀看預告</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 align-self-center">
+                <ul>
+                    <li>影城名稱<span>大老劇院</span></li>
+                    <li>場次日期<span>2022/10/10</span></li>
+                    <li>場次時間<span>10:25</span></li>
+                    <li>張數<span>6</span></li>
+                    <li class="seat">座位<span>B排7號 | B排8號 | B排9號 | B排7號 | B排8號 | B排9號</span></li>
+                    <li></li>
+                    <li>全票<span>200*2</span></li>
+                    <li>半票<span>100*4</span></li>
+                    <li><span>需付價錢 : 800</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="clips">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="heading-section">
+                                <h4>加購商品</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="~/images/Ticketing/f1.jpg" alt="" style="border-radius: 23px;">
+                                </div>
+                                <div class="down-content">
+                                    <h4>First Clip</h4>
+                                    <span><i class="fa fa-dollar"></i> 250</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="~/images/Ticketing/f2.jpg" alt="" style="border-radius: 23px;">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Second Clip</h4>
+                                    <span><i class="fa fa-dollar"></i> 183</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="~/images/Ticketing/f3.jpg" alt="" style="border-radius: 23px;">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Third Clip</h4>
+                                    <span><i class="fa fa-dollar"></i> 141</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="~/images/Ticketing/f4.jpg" alt="" style="border-radius: 23px;">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Fourth Clip</h4>
+                                    <span><i class="fa fa-dollar"></i> 91</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pay">
+            <div class="col-lg-12">
+                <div class="main-button">
+                    <a asp-area="" asp-controller="Ticketing" asp-action="PaymentWeb2">前往付款</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    (function ($) {
+        $(window).on('load', function () {
+            $(".loader").fadeOut();
+            $("#preloder").delay(20).fadeOut("slow");
+
+
+        });
+    })(jQuery);
+</script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>

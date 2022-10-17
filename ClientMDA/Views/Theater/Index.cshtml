@@ -1,0 +1,374 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<head>
+
+    <link href="~/css/Theater/電影院用改.css" rel="stylesheet" />
+
+    <style>
+        a.my-class {
+            color: white
+        }
+
+            a.my-class:active {
+                color: white
+            }
+
+            a.my-class:link {
+                color: white
+            }
+
+            a.my-class:visited {
+                color: white
+            }
+
+        a.my-no {
+            color: rgb(180, 180, 180);
+        }
+            a .my-no:active {
+                color: rgb(180, 180, 180);
+            }
+
+            a.my-no:link {
+                color: rgb(180, 180, 180);
+            }
+
+            a.my-no:visited {
+                color: rgb(180, 180, 180);
+            }
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="commonStyled__WrapperSampleNoContent-sc-kt5vy-9 MovieInfoContentWrapper--1tebbv1 exLSHN gYprgf">
+        <div class="wrapper">
+            <div class="tab checked">
+                現正熱映
+            </div>
+            <div class="tab">
+                @Html.ActionLink("即將上映", "即將上映page1", "Theater", null, new { @class = "my-class" })
+            </div>
+            <div class="underline">
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="commonStyled__WrapperSampleNoContent-sc-kt5vy-9 MovieInfoBoxWrapper--13nahzv exLSHN bYVeqc">
+            <div class="box-wrapper">
+                <a href="@Url.Action("LettheBulletsFly", "Theater")">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(https://upload.wikimedia.org/wikipedia/zh/c/c6/Let_the_Bullets_Fly_Poster.jpg), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="        background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star FaStarHalf" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                            </div>
+                        </div>
+                        <div class="title" title="讓子彈飛">
+                            讓子彈飛
+                        </div>
+                        <div class="en" title="Let the Bullets Fly">
+                            Let the Bullets Fly
+                        </div>
+                        <div class="grade">
+                            保護級
+                        </div>
+                    </div>
+                </a>
+                <a href="/movieInfo?movieid=10f1ba6c6cf44db7be3bdb1d0da06cf9&amp;tab=0">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(&quot;https://img.ezding.com.tw/photos/ezding/poster/px_fsjp21608894_0005.jpg&quot;), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star FaStarHalf" style="background-image: url('../../images/Theater/star/02_star.svg');"></div>
+                            </div>
+                        </div>
+                        <div class="title" title="破案天才伽利略：沉默的遊行">
+                            破案天才伽利略：沉默的遊行
+                        </div>
+                        <div class="en" title="Silent Parade">
+                            Silent Parade
+                        </div>
+                        <div class="grade">
+                            普遍級
+                        </div>
+                    </div>
+                </a>
+                <a href="/movieInfo?movieid=402843a425780881012590d413590009&amp;tab=0">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(&quot;https://img.ezding.com.tw/photos/ezding/poster/px_faen00499549_0018.jpg&quot;), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star FaStarHalf" style="background-image: url('../../images/Theater/star/02_star.svg');"></div>
+                            </div>
+                        </div>
+                        <div class="title" title="阿凡達">
+                            阿凡達
+                        </div>
+                        <div class="en" title="Avatar">
+                            Avatar
+                        </div>
+                        <div class="grade">
+                            普遍級
+                        </div>
+                    </div>
+                </a>
+                <a href="/movieInfo?movieid=8c29ef84d8054a0683c3758a01d4aad9&amp;tab=0">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(&quot;https://img.ezding.com.tw/photos/ezding/poster/px_fckr58437858_0020.jpg&quot;), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star FaStarHalf" style="background-image: url('../../images/Theater/star/02_star.svg');"></div>
+                            </div>
+                        </div>
+                        <div class="title" title="機密同盟2">
+                            機密同盟2
+                        </div>
+                        <div class="en" title="Confidential Assignment 2">
+                            Confidential Assignment 2
+                        </div>
+                        <div class="grade">
+                            輔12級
+                        </div>
+                    </div>
+                </a>
+                <a href="/movieInfo?movieid=2ef8f25c84034da5a5c445b69c0d3a3d&amp;tab=0">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(&quot;https://img.ezding.com.tw/photos/ezding/poster/px_fden10731256_0003.jpg&quot;), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+
+                            </div>
+                        </div>
+                        <div class="title" title="別擔心親愛的">
+                            別擔心親愛的
+                        </div>
+                        <div class="en" title="Don't Worry Darling">
+                            Don't Worry Darling
+                        </div>
+                        <div class="grade">
+                            輔15級
+                        </div>
+                    </div>
+                </a>
+                <a href="/movieInfo?movieid=42b04d80ce7342c89b53961d04b02c66&amp;tab=0">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(&quot;https://img.ezding.com.tw/photos/ezding/poster/px_fljp14364238_0001.jpg&quot;), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                            </div>
+                        </div>
+                        <div class="title" title="電影版搖曳露營">
+                            電影版搖曳露營
+                        </div>
+                        <div class="en" title="Laid-Back Camp">
+                            Laid-Back Camp
+                        </div>
+                        <div class="grade">
+                            普遍級
+                        </div>
+                    </div>
+                </a>
+                <a href="@Url.Action("捍衛戰士2", "Theater")">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(&quot;https://img.ezding.com.tw/photos/ezding/poster/px_ften51745960_0005.jpg&quot;), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                            </div>
+                        </div>
+                        <div class="title" title="捍衛戰士：獨行俠">
+                            捍衛戰士：獨行俠
+                        </div>
+                        <div class="en" title="Top Gun: Maverick">
+                            Top Gun: Maverick
+                        </div>
+                        <div class="grade">
+                            保護級
+                        </div>
+                    </div>
+                </a>
+                <a href="/movieInfo?movieid=1bb1e23b3cc34967b9d60c476e45bf98&amp;tab=0">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(&quot;https://img.ezding.com.tw/photos/ezding/poster/px_fsjp10737918_0001.jpg&quot;), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                            </div>
+                        </div>
+                        <div class="title" title="新．超人力霸王">
+                            新．超人力霸王
+                        </div>
+                        <div class="en" title="Shin Ultraman">
+                            Shin Ultraman
+                        </div>
+                        <div class="grade">
+                            普遍級
+                        </div>
+                    </div>
+                </a>
+                <a href="/movieInfo?movieid=316660cd5a01424caeddc114acd3e7fd&amp;tab=0">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(&quot;https://img.ezding.com.tw/photos/ezding/poster/px_fben12593682_0006.jpg&quot;), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                            </div>
+                        </div>
+                        <div class="title" title="子彈列車">
+                            子彈列車
+                        </div>
+                        <div class="en" title="Bullet Train">
+                            Bullet Train
+                        </div>
+                        <div class="grade">
+                            輔12級
+                        </div>
+                    </div>
+                </a>
+                <a href="/movieInfo?movieid=573010cd6d9843388d0b2d4d0485730a&amp;tab=0">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(&quot;https://img.ezding.com.tw/photos/ezding/poster/px_fojp16183464_0003.jpg&quot;), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                            </div>
+                        </div>
+                        <div class="title" title="航海王劇場版：紅髮歌姬">
+                            航海王劇場版：紅髮歌姬
+                        </div>
+                        <div class="en" title="One Piece Film: Red">
+                            One Piece Film: Red
+                        </div>
+                        <div class="grade">
+                            保護級
+                        </div>
+                    </div>
+                </a>
+                <a href="/movieInfo?movieid=5aedbc67f106497699b22a1fe8a178c5&amp;tab=0">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(&quot;https://img.ezding.com.tw/photos/ezding/poster/px_fiatm0894057_0051.jpg&quot;), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                            </div>
+                        </div>
+                        <div class="title" title="花樣年華">
+                            花樣年華
+                        </div>
+                        <div class="en" title="In the Mood for Love">
+                            In the Mood for Love
+                        </div>
+                        <div class="grade">
+                            普遍級
+                        </div>
+                    </div>
+                </a>
+                <a href="/movieInfo?movieid=cff9c3fcf6d5405cb65e9d1da8f1660f&amp;tab=0">
+                    <div class="post-box">
+                        <div class="post" style="background-image: url(&quot;https://img.ezding.com.tw/photos/ezding/poster/px_fskr79391669_0003.jpg&quot;), url('../../images/Theater/common/poster.png');"></div>
+                        <div class="star">
+                            <div class="commonStyled__MovieStars-sc-kt5vy-3 ijuViJ">
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                                <div class="star" style="background-image: url('../../images/Theater/star/color_star.svg');"></div>
+                            </div>
+
+                        </div>
+                        <div class="title" title="語意錯誤電影版">
+                            語意錯誤電影版
+                        </div>
+                        <div class="en" title="Semantic Error">
+                            Semantic Error
+                        </div>
+                        <div class="grade">
+                            輔12級
+                        </div>
+                    </div>
+                </a>
+                <div class="page">
+                    <div class="commonStyled__ChangePagesWrapper-sc-kt5vy-7 ffVUQI">
+                        <div class="circle nowIndex1"><img src="~/images/Theater/common/changepage-icon.svg" /></div>
+
+                        <div class="circle nowIndex1"><img src="~/images/Theater/common/changepage-icon1.svg" /></div>
+                        <div class="circle numIndex add">
+                            1
+                        </div>
+                        <div class="circle numIndex">
+                            @Html.ActionLink("2", "Indexpage2", "Theater", null, new { @class = "my-no" })
+
+                        </div>
+                        <div class="circle numIndex">
+                            @Html.ActionLink("3", "Indexpage3", "Theater", null, new { @class = "my-no" })
+                        </div>
+                        <div class="circle numIndex">
+                            @Html.ActionLink("4", "Indexpage4", "Theater", null, new { @class = "my-no" })
+                        </div>
+                        <div class="circle numIndex">
+                            @Html.ActionLink("5", "Indexpage5", "Theater", null, new { @class = "my-no" })
+                        </div>
+                        <div class="circle">
+                            <a href="@Url.Action("Indexpage2", "Theater")" class="my-no"><img src="~/images/Theater/common/changepage-icon.svg"></a>
+                        </div>
+                        <div class="circle">
+                            <a href="@Url.Action("Indexpage5", "Theater")" class="my-no"><img src="~/images/Theater/common/caret-up.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> @*footer樣式*@
+</body>

@@ -1,0 +1,518 @@
+﻿html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    position: relative;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+.list, .listb {
+    list-style-type: none;
+    color: white;
+}
+
+    .list li {
+        margin-top: 20%;        
+    }
+
+    .listb li {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#img-wrapper {
+    position: relative;
+    overflow: hidden;   
+}
+
+#imgbox{
+   /* background-color:red;*/
+    width:1140px;
+    height:650px;
+
+}
+
+.img-wrapper > img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#content {
+    z-index: 0;
+    /*height: 20%;*/
+    height: 100%;
+    width: 100%;
+}
+
+
+#img-wrapper > img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#img-wrapper > .hangposter {
+    position: absolute;
+    inset: 49% 0 0 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper > .content {
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    background: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgbanner {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.ipc-icon ipc-icon--play-circle-outline-large-inline sc-8f5243a8-5 jdPzoP slide-caption-play-icon {
+    color: rgba(255,255,255);
+}
+
+content-banner :hover {
+    color: rgba(245,197,24);
+}
+
+.hangposter {
+    background-color: transparent;
+    height: 330px;
+    width: 231px;
+    z-index: 1;
+}
+
+#right, #left {
+    background-color: transparent;
+    z-index: 2;
+    height: 96px;
+    width: 70px;
+    border: solid;
+    border-color: #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.swiper > #right {
+    position: absolute;
+    inset: 45% 0 0 94%;
+}
+
+.swiper > #left {
+    position: absolute;
+    inset: 45% 94% 0 0;
+}
+
+#right:hover, #left:hover {
+    color: rgba(245,197,24);
+}
+
+/*改顏色*/
+#icon {
+    background-color: transparent;
+}
+
+#img-wrapper > #content {
+    position: absolute;
+    /*inset: 80% 0 0 0;*/
+    padding: 1rem;
+    /*background: rgba(0,0,0,.8);*/
+    /*background: linear-gradient(to top, #000000,transparent );*/
+    background-image: linear-gradient(transparent, black);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+    transition: 200ms ease-in-out;
+}
+
+.img-wrapper:hover > .content.fade {
+    opacity: 1;
+}
+
+.img-wrapper > .content.fade {
+    opacity: 0;
+}
+
+.img-wrapper:hover > img.c {
+    filter: blur(5px);
+}
+
+#swiper-paginationR {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+}
+
+
+
+
+.box {
+    background-color: rgba(20,20,78);
+}
+
+.info_box {
+    padding-top: 22px;
+    box-sizing: border-box;
+}
+
+.info {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 16px;
+    vertical-align: baseline;
+}
+
+    .info h5 {
+        color: whitesmoke;
+        text-align: left;
+    }
+
+#fafastarchecked {
+    color: rgba(245,197,24);
+}
+
+.star {
+    position: absolute;
+    left: 15px;
+}
+
+.starRate {
+    color: whitesmoke;
+    padding-right: 40px;
+}
+
+#ToR {
+    font-size: 22px;
+    color: rgba(87,153,239);
+}
+
+    #ToR:hover {
+        font-size: 22px;
+        color: snow;
+    }
+
+.AddList {
+    justify-content: center;
+}
+
+.AddListBtn {
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(44,44,44,0.6);
+    color: whitesmoke;
+    width: 180px;
+    height: 50px;
+}
+
+#plus {
+    font-size: 16px;
+    color: #FFF;
+    padding-right: 10px;
+}
+
+.AddListBtn:hover {
+    background-color: rgba(60,60,60,0.6);
+}
+
+.AddList {
+    padding-bottom: 48px;
+}
+
+.ToRate {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 0;
+    width: 60px;
+    height: 35px;
+}
+
+    .ToRate:hover {
+        background-color: rgba(60,60,60,0.6);
+    }
+
+#play {
+    font-size: 80px;
+    color: rgba(255,255,255);
+    margin: 5%;
+    margin-left: 25%;
+}
+
+#img-wrapper:hover #play {
+    color: rgba(245,197,24);
+}
+
+#box-banner {
+    margin-bottom: 2%;
+    margin-right: 5%;
+}
+
+
+/*rating*/
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+    .rating > input {
+        display: none;
+    }
+
+    .rating > label {
+        position: relative;
+        width: 1em;
+        font-size: 3rem;
+        color: #00b0f0;
+        cursor: pointer;       
+    }
+
+        .rating > label::before {
+            content: "\2605";
+            position: absolute;
+            opacity: 0;
+        }
+
+        .rating > label:hover:before,
+        .rating > label:hover ~ label:before {
+            opacity: 1 !important;
+        }
+
+    .rating > input:checked ~ label:before {
+        opacity: 1;
+    }
+
+    .rating:hover > input:checked ~ label:before {
+        opacity: 0.4;
+    }
+
+
+
+#modal {
+    /*display: none;*/
+    position: fixed;
+    z-index: 10;
+    top: 80%;
+    left: 50%;
+    width: 680px;
+    max-width: 80%;
+    border: none;
+    background-color: transparent;
+    transform: translate(-50%,-50%) ;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.modal.active {
+    transform: translate(-50%,-50%) scale(1);
+}
+#fafastarrate {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11.8rem;
+    color: #00b0f0;
+    z-index: 7;
+}
+
+.modal > #fafastarrate {
+    padding-left: 34%
+}
+
+#rate-nuber {
+    position: absolute;
+    color: rgba(255 255 255);
+    font-size: 6rem;
+    z-index: 8;
+}
+
+.modal-rating-header {
+    padding: 5px 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 5;
+    height: 100px;   
+    
+}
+
+
+.modal-close-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    height: 50px;
+    width: 50px;
+    
+}
+    .modal-close-btn:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+
+#modal-rating-body {
+    /*顏色要改*/   
+    border: 1px solid rgba(31,31,31);
+    background-color: rgba(31,31,31);
+    border-radius: 10px;
+    padding: 10px;
+    height: 400px;
+    align-items: center;
+    
+}
+
+#rating-it {
+    font-size: 1.6rem;
+    /*改字的顏色*/
+    color: rgba(245,197,24);
+    
+}
+
+#in-rating-movie {
+    font-size: 2rem;
+    padding-top:10px;
+}
+
+#rating-title {
+    text-align: center;
+    padding: 100px 10px 10px 10px;
+}
+
+#overlay {    
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);   
+    pointer-events: none;
+    z-index:7;
+}
+
+    #overlay.active {
+        pointer-events: all;
+        opacity: 1;
+    }
+
+.sumitstarBtn {
+    border: 0;
+    border-radius: 10px;
+    background-color: dimgrey;
+    color: whitesmoke;
+    width: 180px;
+    height: 40px;    
+    font-size:1.25rem;
+}
+
+#summitbox {
+    text-align: center
+}
+
+
+
+/*背景東西不能點選*/
+
+
+.modal-rating-header-btn{
+    z-index:9;
+}
+
+/*test*/
+/*.bubble {
+    transform: scale(0);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #C00;
+    transition: all 5s;
+}
+
+    .bubble.animate {
+        transform: scale(1);
+    }*/
+
+#mylist {
+    display:flex;
+    width: 1140px;
+    height: 480px;
+    background-color: rgba(0,0,0,.4);    
+    align-items:center;
+    justify-items:center;
+    justify-content:center;
+    align-content:center;
+}
+
+#addmylist{
+    font-size:2.5rem;
+}

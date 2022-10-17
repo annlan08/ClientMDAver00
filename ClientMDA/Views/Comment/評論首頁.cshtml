@@ -1,0 +1,473 @@
+﻿
+@section Styles{
+    <style>
+        .owl-stage-outer {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .mem_info {
+            float: left;
+            line-height: 30px
+        }
+
+        .mem_img {
+            height: 30px;
+            width: 30px;
+            float: left;
+        }
+        /*.text-white span{
+            color:#fefefe;
+        }
+        .card-text {
+            color: #fefefe;
+        }*/
+
+        .card-columns {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 2;
+            -webkit-column-gap: 1.25rem;
+            -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+            orphans: 1;
+            widows: 1;
+            /*border: dotted 1px red;*/
+        }
+
+        .card {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: rgba(255, 255, 255, 0.05);
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0.25rem;
+            border-radius: 15px;
+        }
+
+        .mb-3,
+        .my-3 {
+            margin-bottom: 2rem !important;
+        }
+
+        .text-muted {
+            float: right;
+        }
+        .hero{
+            padding-top:0;
+        }
+        .hero__items{
+/*            height:450px;*/
+        }
+
+    </style>
+}
+
+<body class="text-white">
+    <hr />
+    <div class="section-title">
+        <h5>熱門評論</h5>
+    </div>
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__slider owl-carousel">
+                <div class="hero__items set-bg" data-setbg="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/202205/628C963D8F7801653380669.jpeg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">
+                                    <span class="mem_info">
+                                        <span style="color:white">
+                                            <img src="~/images/Comment/mem01.png" alt="" style="width:30px">
+                                            rainbow - 2022/07/26 21:52
+                                        </span>
+                                    </span>
+                                </div>
+                                <h3>不只關於速度與飛翔的渴望<br />也與我們的悔恨以及所需要的勇氣有關</h3><hr />
+                                <p>
+                                    湯姆．克魯斯（Tom Cruise）的《捍衛戰士：獨行俠》（Top Gun: Maverick）在各地試映過後，隨即得到了一片熱烈好評，
+                                    並被不少人稱為一定要進戲院欣賞的超級大片......
+                                </p><a asp-area="" asp-controller="Comment" asp-action="會員評論"><span>看評論</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/202205/628C963D8F7801653380669.jpeg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">
+                                    <span class="mem_info">
+                                        <span style="color:white">
+                                            <img src="~/images/Comment/mem01.png" alt="" style="width:30px">
+                                            rainbow - 2022/07/26 21:52
+                                        </span>
+                                    </span>
+                                </div>
+                                <h3>不只關於速度與飛翔的渴望<br />也與我們的悔恨以及所需要的勇氣有關</h3><hr />
+                                <p>
+                                    湯姆．克魯斯（Tom Cruise）的《捍衛戰士：獨行俠》（Top Gun: Maverick）在各地試映過後，隨即得到了一片熱烈好評，
+                                    並被不少人稱為一定要進戲院欣賞的超級大片......
+                                </p><a asp-area="" asp-controller="Comment" asp-action="會員評論"><span>看評論</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/202205/628C963D8F7801653380669.jpeg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">
+                                    <span class="mem_info">
+                                        <span style="color:white">
+                                            <img src="~/images/Comment/mem01.png" alt="" style="width:30px">
+                                            rainbow - 2022/07/26 21:52
+                                        </span>
+                                    </span>
+                                </div>
+                                <h3>不只關於速度與飛翔的渴望<br />也與我們的悔恨以及所需要的勇氣有關</h3><hr />
+                                <p>
+                                    湯姆．克魯斯（Tom Cruise）的《捍衛戰士：獨行俠》（Top Gun: Maverick）在各地試映過後，隨即得到了一片熱烈好評，
+                                    並被不少人稱為一定要進戲院欣賞的超級大片......
+                                </p><a asp-area="" asp-controller="Comment" asp-action="會員評論"><span>看評論</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+
+    @*<div class="select">
+            <div class="options">
+                <div class="option">
+                    <div>全部</div>
+                </div>
+                <div class="option">
+                    <div>專題</div>
+                </div>
+                <div class="option checked">
+                    <div>影評</div>
+                </div>
+                <div class="option">
+                    <div>新聞</div>
+                </div>
+            </div>
+        </div>*@
+
+    <hr />
+    <div class="section-title">
+        <h5>最新評論</h5>
+    </div>
+
+    <div class="card-columns">
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNTZlYTE1MDktOGRkOC00NjIwLWIyY2MtYjQxMDZlMDlmYmRkXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_FMjpg_UX691_.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">評論標題</h5>
+                        <span class="mem_info">
+                            <span>
+                                <img src="~/images/Comment/mem01.png" alt="" height="30">
+                                會員 Rainbow
+                            </span>
+                            <span>
+                                - 2022/07/25 <span style="color:white"></span>
+                            </span><hr />
+                            <p class="card-text">
+                                這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容......
+                            </p>
+                            <a asp-controller="Comment" asp-action="會員評論"><p class="card-text"><small class="text-muted">詳全文 >> </small></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNTZlYTE1MDktOGRkOC00NjIwLWIyY2MtYjQxMDZlMDlmYmRkXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_FMjpg_UX691_.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">評論標題</h5>
+                        <span class="mem_info">
+                            <span>
+                                <img src="~/images/Comment/mem01.png" alt="" height="30">
+                                會員 Rainbow
+                            </span>
+                            <span>
+                                - 2022/07/25 <span style="color:white"></span>
+                            </span><hr />
+                            <p class="card-text">
+                                這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容......
+                            </p>
+                            <a asp-controller="Comment" asp-action="會員評論"><p class="card-text"><small class="text-muted">詳全文 >> </small></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNTZlYTE1MDktOGRkOC00NjIwLWIyY2MtYjQxMDZlMDlmYmRkXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_FMjpg_UX691_.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">評論標題</h5>
+                        <span class="mem_info">
+                            <span>
+                                <img src="~/images/Comment/mem01.png" alt="" height="30">
+                                會員 Rainbow
+                            </span>
+                            <span>
+                                - 2022/07/25 <span style="color:white"></span>
+                            </span><hr />
+                            <p class="card-text">
+                                這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容......
+                            </p>
+                            <a asp-controller="Comment" asp-action="會員評論"><p class="card-text"><small class="text-muted">詳全文 >> </small></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNTZlYTE1MDktOGRkOC00NjIwLWIyY2MtYjQxMDZlMDlmYmRkXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_FMjpg_UX691_.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">評論標題</h5>
+                        <span class="mem_info">
+                            <span>
+                                <img src="~/images/Comment/mem01.png" alt="" height="30">
+                                會員 Rainbow
+                            </span>
+                            <span>
+                                - 2022/07/25 <span style="color:white"></span>
+                            </span><hr />
+                            <p class="card-text">
+                                這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容......
+                            </p>
+                            <a asp-controller="Comment" asp-action="會員評論"><p class="card-text"><small class="text-muted">詳全文 >> </small></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNTZlYTE1MDktOGRkOC00NjIwLWIyY2MtYjQxMDZlMDlmYmRkXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_FMjpg_UX691_.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">評論標題</h5>
+                        <span class="mem_info">
+                            <span>
+                                <img src="~/images/Comment/mem01.png" alt="" height="30">
+                                會員 Rainbow
+                            </span>
+                            <span>
+                                - 2022/07/25 <span style="color:white"></span>
+                            </span><hr />
+                            <p class="card-text">
+                                這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容......
+                            </p>
+                            <a asp-controller="Comment" asp-action="會員評論"><p class="card-text"><small class="text-muted">詳全文 >> </small></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNTZlYTE1MDktOGRkOC00NjIwLWIyY2MtYjQxMDZlMDlmYmRkXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_FMjpg_UX691_.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">評論標題</h5>
+                        <span class="mem_info">
+                            <span>
+                                <img src="~/images/Comment/mem01.png" alt="" height="30">
+                                會員 Rainbow
+                            </span>
+                            <span>
+                                - 2022/07/25 <span style="color:white"></span>
+                            </span><hr />
+                            <p class="card-text">
+                                這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容這邊是評論內容......
+                            </p>
+                            <a asp-controller="Comment" asp-action="會員評論"><p class="card-text"><small class="text-muted">詳全文 >> </small></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    @*<div class="commonStyled__WrapperSample-sc-kt5vy-8 articleStyled__ArticlePagesWrapper-sc-1cyx0ra-1 gqwHXW fvzPLg">
+            <div class="wrapper">
+                <div class="titlebox">
+                    <div class="title">
+                        近期文章
+                    </div>
+                </div>
+                <div class="newsbox">
+                    <div class="photoBox">
+                        <div class="photo" style="background-image: url('');"></div>
+                    </div>
+                    <div class="title" title="影評∣《破案天才伽利略：沉默的遊行》理性推理不失感性元素">
+                        影評∣《破案天才伽利略：沉默的遊行》理性推理不失感性元素
+                    </div><img class="cmimg" src="https://img.ezding.com.tw/photos/ezding/ckupload/images/301150558_5722715071081183_6336800794626607188_n.jpeg">
+                    <div class="name">
+                        <div>
+                            火行者
+                        </div>
+                        <div>
+                            2022/09/23
+                        </div>
+                    </div>
+                    <div class="text">
+                        《破案天才伽利略：沉默的遊行》過去有日劇也有另外兩部大銀幕電影，是東野圭吾偵探小說系列改編的電影，並不需要看過前作，都可以單獨觀賞，是獨立的案件，且重點就是案件
+                    </div>
+                </div>
+                <div class="newsbox">
+                    <div class="photoBox">
+                        <div class="photo" style="background-image:url(&quot;../../images/Comment/111.jpg&quot;);"></div>
+                    </div>
+                    <div class="title" title="影評∣《別擔心親愛的》人生本就不完美，要如何擁有完美人生？">
+                        影評∣《別擔心親愛的》人生本就不完美，要如何擁有完美人生？
+                    </div><img class="cmimg" src="https://img.ezding.com.tw/photos/ezding/ckupload/images/301150558_5722715071081183_6336800794626607188_n.jpeg">
+                    <div class="name">
+                        <div>
+                            火行者
+                        </div>
+                        <div>
+                            2022/09/23
+                        </div>
+                    </div>
+                    <div class="text">
+                        《別擔心親愛的》是有梗的電影，這篇文章不會爆雷可以放心閱讀，不過在網路上隨意瀏覽時要小心，在不知情的情況下看，過程才能比較有懸疑性並讓人不斷猜測。 其實《別
+                    </div>
+                </div>
+                <div class="newsbox">
+                    <div class="photoBox">
+                        <div class="photo" style="background-image:url(&quot;../../images/Comment/111.jpg&quot;);"></div>
+                    </div>
+                    <div class="title" title="影評∣《看你往哪跑》講謀殺劇發生的謀殺的謀殺劇">
+                        影評∣《看你往哪跑》講謀殺劇發生的謀殺的謀殺劇
+                    </div><img class="cmimg" src="https://img.ezding.com.tw/photos/ezding/ckupload/images/301150558_5722715071081183_6336800794626607188_n.jpeg">
+                    <div class="name">
+                        <div>
+                            火行者
+                        </div>
+                        <div>
+                            2022/09/23
+                        </div>
+                    </div>
+                    <div class="text">
+                        《看你往哪跑》是一部蠻有趣的偵探電影，很傳統，又很不傳統，但可能沒有那麼大眾口味，比較適合常看這類電影（或小說）、會欣賞電影手法、且有些幽默感的觀眾。 《看
+                    </div>
+                </div>
+                <div class="newsbox">
+                    <div class="photoBox">
+                        <div class="photo" style="background-image:url(&quot;../../images/Comment/111.jpg&quot;);"></div>
+                    </div>
+                    <div class="title" title="影評∣《機密同盟2》有帥哥有搞笑有動作的商業套餐">
+                        影評∣《機密同盟2》有帥哥有搞笑有動作的商業套餐
+                    </div><img class="cmimg" src="https://img.ezding.com.tw/photos/ezding/ckupload/images/301150558_5722715071081183_6336800794626607188_n.jpeg">
+                    <div class="name">
+                        <div>
+                            火行者
+                        </div>
+                        <div>
+                            2022/09/16
+                        </div>
+                    </div>
+                    <div class="text">
+                        簡單來說，《機密同盟2》就是純娛樂爽片，可以約三五好友去看，很大眾化，沒有看過第一集雖然可能會差一點笑料，但故事本身不會看不懂，且大概也可以猜出先前的狀況大要，
+                    </div>
+                </div>
+                <div class="newsbox">
+                    <div class="photoBox">
+                        <div class="photo" style="background-image:url(&quot;../../images/Comment/111.jpg&quot;);"></div>
+                    </div>
+                    <div class="title" title="影評∣《拉辛正傳》用單純的角度看複雜的世界">
+                        影評∣《拉辛正傳》用單純的角度看複雜的世界
+                    </div><img class="cmimg" src="https://img.ezding.com.tw/photos/ezding/ckupload/images/301150558_5722715071081183_6336800794626607188_n.jpeg">
+                    <div class="name">
+                        <div>
+                            火行者
+                        </div>
+                        <div>
+                            2022/09/08
+                        </div>
+                    </div>
+                    <div class="text">
+                        《拉辛正傳》是《阿甘正傳》〔Forrest〕的翻拍，由阿米爾罕〔Aamir Khan〕主演。IMDB的分數不太準，進去看細節會發現有近半的人給最低分，通常這些人
+                    </div>
+                </div>
+                <div class="newsbox">
+                    <div class="photoBox">
+                        <div class="photo" style="background-image:url(&quot;../../images/Comment/111.jpg&quot;);"></div>
+                    </div>
+                    <div class="title" title="影評∣《三千年的渴望》「故事」在人類生活中扮演的角色">
+                        影評∣《三千年的渴望》「故事」在人類生活中扮演的角色
+                    </div><img class="cmimg" src="https://img.ezding.com.tw/photos/ezding/ckupload/images/301150558_5722715071081183_6336800794626607188_n.jpeg">
+                    <div class="name">
+                        <div>
+                            火行者
+                        </div>
+                        <div>
+                            2022/09/08
+                        </div>
+                    </div>
+                    <div class="text">
+                        《三千年的渴望》是一部蠻難分類的電影，當然它絕對是奇幻片，但它的形式和傳統奇幻電影蠻不一樣的，又有許多的愛情題材，跟我看了預告之後的猜想大不同，也實在難以用幾句
+                    </div>
+                </div>
+                <div class="commonStyled__Clearfix-sc-kt5vy-2 dyOReL"></div>
+            </div>
+        </div>*@
+</body>
+
+<!-- Js Plugins -->
+@*<script src="~/js/Anime/bootstrap.min.js"></script>
+    <script src="~/js/Anime/main.js"></script>
+    <script src="~/js/Anime/player.js"></script>*@
+
+
+<!-- Js Plugins -->
+<script src="~/js/jquery-3.3.1.min.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/js/player.js"></script>
+<script src="~/js/jquery.nice-select.min.js"></script>
+<script src="~/js/mixitup.min.js"></script>
+<script src="~/js/jquery.slicknav.js"></script>
+<script src="~/js/owl.carousel.min.js"></script>
+<script src="~/js/main.js"></script>
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> @*footer樣式*@
+

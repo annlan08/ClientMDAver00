@@ -1,0 +1,286 @@
+﻿@{
+    string text = "+886";
+}
+
+<link rel="stylesheet" href="~/cyborg/css/fontawesome.css">
+<link href="form-validation.css" rel="stylesheet">
+<style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+    }
+
+    .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+    }
+
+    .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+    }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+    .form-label {
+        color: whitesmoke;
+    }
+
+    .form-check-label {
+        color: whitesmoke;
+    }
+
+    .mb-3 {
+        color: whitesmoke;
+    }
+
+    body {
+        --bs-bg-opacity: 1;
+    }
+
+    .needs-validation .label-text {
+        color: whitesmoke;
+    }
+</style>
+
+
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<section class="container justify-content-center m-5">
+    <div class="container justify-content-center m-2">
+        <main>
+            <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary">訂單內容</span>
+                        <span class="badge bg-primary rounded-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">票種一</h6>
+                                <small class="text-muted">票種資訊</small>
+                            </div>
+                            <span class="text-muted">$100</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">票種二</h6>
+                                <small class="text-muted">票種資訊</small>
+                            </div>
+                            <span class="text-muted">$101</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">票種三</h6>
+                                <small class="text-muted">票種資訊</small>
+                            </div>
+                            <span class="text-muted">$50</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">優惠折扣</h6>
+                                <small>折扣內容資訊</small>
+                            </div>
+                            <span class="text-success">−$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>總價 (NTD)</span>
+                            <strong>$20</strong>
+                        </li>
+                    </ul>
+
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="優惠碼">
+                            <button type="submit" class="btn btn-secondary">輸入優惠碼</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">帳單地址</h4>
+                    <form class="needs-validation" novalidate action="~/Ticketing/PaymentWeb3">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">姓 氏</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    姓氏需輸入
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">名 字</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    名字需輸入
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="username" class="form-label">連絡電話</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text"> @text </span>
+                                    <input type="tel" class="form-control" id="username" placeholder="電話號碼" required>
+                                    <div class="invalid-feedback">
+                                        連絡電話需輸入
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">電子郵件 <span class="text-muted">(註明)</span></label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">
+                                    電子郵件需輸入
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">帳單地址</label>
+                                <input type="text" class="form-control" id="address" placeholder="輸入地址" required>
+                                <div class="invalid-feedback">
+                                    帳單地址需輸入
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address2" class="form-label">居住城市<span class="text-muted">(可選)</span></label>
+                                <input type="text" class="form-control" id="address2" placeholder="輸入城市">
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="send-email">
+                            <label class="mb-0" for="send-email">我同意以後會收到來自本網站的相關優惠訊息</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="save-info">
+                            <label class="mb-0" for="save-info">儲存個人資訊</label>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h4 class="mb-3">付款方式</h4>
+
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                <label class="mb-0" for="credit">信用卡</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="mb-0" for="debit">大佬卡</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="mb-0" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+
+                        <div class="row gy-3">
+                            <div class="col-md-10 pb-2">
+                                <label for="cc-number" class="form-label">信用卡號碼</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    信用卡號碼需輸入
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label">有效日期 月</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="MM" required>
+                                <div class="invalid-feedback">
+                                    有效日期需輸入
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label"> 年 </label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="YYYY" required>
+                                <div class="invalid-feedback">
+                                    有效日期需輸入
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-cvv" class="form-label">安全碼</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    安全碼需輸入
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-75 btn btn-primary btn-lg" type="submit">確認付款</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</section>
+
+<script>
+    (function ($) {
+        $(window).on('load', function () {
+            $(".loader").fadeOut();
+            $("#preloder").delay(20).fadeOut("slow");
+        });
+    })(jQuery);
+
+    (() => {
+        'use strict'
+        const forms = document.querySelectorAll('.needs-validation')
+
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                else {
+
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
