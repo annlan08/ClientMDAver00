@@ -22,15 +22,6 @@ namespace ClientMDA.Controllers
         {
             return View();
         }
-        //public IActionResult MovieInfoIndex2()
-        //{
-        //    return View();
-        //}
-
-        //public IActionResult MovieInfoIndex3()
-        //{
-        //    return View();
-        //}
 
         public IActionResult SelectMovie()
         {
@@ -48,10 +39,16 @@ namespace ClientMDA.Controllers
             return PartialView($"~/Views/Ticketing/_MoviePartialView.cshtml");
         }
 
-        public IActionResult SeatMap(int AA)
+        public IActionResult SeatMap()
         {
-            return View(AA);
+            return View();
         }
+
+        public IActionResult SelectByMovie(int id)
+        {
+            return View(id);
+        }
+
 
         public IActionResult PaymentWeb() 
         {
@@ -69,11 +66,6 @@ namespace ClientMDA.Controllers
             return View();
         }
 
-
-        public IActionResult SelectByMovie()
-        {
-            return View();
-        }
 
         public IActionResult SelectTicket()
         {

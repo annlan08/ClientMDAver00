@@ -1,28 +1,144 @@
 ﻿@{
-
+    int MAXcount = 5;
 }
-
-<style>
-
-    .TicketCounter span {
-        font-size: 22px;
-    }
-</style>
 
 <link rel="stylesheet" href="~/cyborg/css/fontawesome.css">
 
-<div class="border border-5 border-primary  w-75 p-3 m-3">
-    <div class="row">
-        <div class="col-3 ml-3"><h4>全票</h4></div>
-        <div class="col-2 ml-3 text-center"><h4>300</h4></div>
-        <div class="col-5 TicketCounter text-right"><span class="fa-solid fa-plus"></span> <span class="pr-3 pl-3"> 0 </span> <span class="fa-solid fa-subtract"></span></div>
+<head>
+    <link rel="stylesheet" href="~/cyborg/css/fontawesome.css">
+    <link rel="stylesheet" href="~/cyborg/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <style>
+        .main-profile ul .seat {
+            border-bottom: none;
+        }
+
+        .item {
+            height: 400px;
+        }
+
+            .item img {
+                height: 300px;
+            }
+
+        .pay {
+            text-align: center;
+        }
+
+        body {
+            background-color: #070720;
+        }
+
+        .TicketCounter span {
+            font-size: 22px;
+        }
+
+        .TicketCounter .fa-solid {
+            cursor: pointer;
+        }
+
+            .TicketCounter .fa-solid:hover {
+                color: #0080FF;
+            }
+
+        .TicketCounter .count-value {
+        }
+
+    </style>
+</head>
+
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<div class="pt-4">
+    <div class="main-profile pt-4">
+        <div class="row">
+            <div class="col-lg-8 align-self-lg-start">
+                <div class="border border-5 border-light p-3 m-3">
+                    <div class="row">
+                        <div class="col-3 ml-3"><h4>全票</h4></div>
+                        <div class="col-2 ml-3 text-center"><h4>300</h4></div>
+                        <div class="col-5 TicketCounter text-right"><span class="fa-solid fa-plus"></span> <span class="pr-3 pl-3 count-value"> 0 </span> <span class="fa-solid fa-subtract"></span></div>
+                    </div>
+                </div>
+                <div class="border border-5 border-light p-3 m-3">
+                    <div class="row">
+                        <div class="col-3 ml-3"><h4>半票</h4></div>
+                        <div class="col-2 ml-3 text-center"><h4>150</h4></div>
+                        <div class="col-5 TicketCounter text-right"><span class="fa-solid fa-plus"></span> <span class="pr-3 pl-3 count-value"> 0 </span> <span class="fa-solid fa-subtract"></span></div>
+                    </div>
+                </div>
+                <div class="border border-5 border-light p-3 m-3">
+                    <div class="row">
+                        <div class="col-3 ml-3"><h4>愛心票</h4></div>
+                        <div class="col-2 ml-3 text-center"><h4>100</h4></div>
+                        <div class="col-5 TicketCounter text-right"><span class="fa-solid fa-plus"></span> <span class="pr-3 pl-3 count-value"> 0 </span> <span class="fa-solid fa-subtract"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 align-self-center">
+                <ul>
+                    <li>影城名稱<span>大老劇院</span></li>
+                    <li>場次日期<span>2022/10/10</span></li>
+                    <li>場次時間<span>10:25</span></li>
+                    <li>張數<span>6</span></li>
+                    <li class="seat">座位<span>B排7號 | B排8號 | B排9號 | B排7號 | B排8號 | B排9號</span></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <form form method="post" action="~/Ticketing/PaymentWeb2">
+            <div class="pay">
+                <div class="col-lg-12">
+                    <div class="main-button">
+                        <button type="submit" class="btn-outline-primary">前往付款</button>
+                    </div>
+              
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 
-<div class="border border-5 border-primary  w-75 p-3 m-3">
-    <div class="row">
-        <div class="col-3 ml-3"><h4>半票</h4></div>
-        <div class="col-2 ml-3 text-center"><h4>150</h4></div>
-        <div class="col-5 TicketCounter text-right"><span class="fa-solid fa-plus"></span> <span class="pr-3 pl-3"> 0 </span> <span class="fa-solid fa-subtract"></span></div>
-    </div>
-</div>
+<script>
+    (function ($) {
+        $(window).on('load', function () {
+            $(".loader").fadeOut();
+            $("#preloder").delay(20).fadeOut("slow");
+
+
+        });
+    })(jQuery);
+
+    const maxcount =@MAXcount;
+    let currentValue = 0;
+
+    $('.fa-plus').click(function () {
+        let text = $(event.currentTarget).parents('.TicketCounter').find('span')[1].textContent;
+        let value = parseInt(text);
+        if (value == maxcount) {
+            return;
+        }
+        if (currentValue < maxcount) {
+            currentValue = currentValue + 1;
+            $(event.currentTarget).parents('.TicketCounter').find('span')[1].textContent = (value + 1);
+        }
+
+    })
+
+    $('.fa-subtract').click(function () {
+        let text = $(event.currentTarget).parents('.TicketCounter').find('span')[1].textContent;
+        let value = parseInt(text);
+        if (value == 0) {
+            return;
+        }
+        if (currentValue > 0) {
+            currentValue = currentValue - 1;
+            $(event.currentTarget).parents('.TicketCounter').find('span')[1].textContent = (value - 1);
+        }
+
+    })
+</script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
